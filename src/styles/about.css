@@ -1,0 +1,21 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    font-family: "Georgia", serif;
+    color: #333;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .about-container .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+  }
+  
+  .about-container .about-content p {
+    margin-bottom: 1.5rem;
+  }
+  

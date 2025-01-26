@@ -1,0 +1,127 @@
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'karla', sans-serif;
+  color: #222;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  align-self: flex-start;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.send-button {
+  background: transparent;
+  border: 2px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-bottom: 40px; /* Creates space below the button */
+}
+
+
+.send-button:hover {
+  background: black;
+  color: white;
+}
+
+.contact-note {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.contact-footer {
+  margin-top: 70px; /* Added more space */
+  font-size: 14px;
+}
+
+.contact-footer h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px; /* Adds space below h3 */
+}
+
+.contact-footer p {
+  margin-top: 15px; /* Adds space above p */
+  color: #444;
+  line-height: 1.8;
+}
+
+
+
+.contact-footer p br {
+  display: block;
+  margin-bottom: 15px; /* Adds space below the <br> */
+}
+
+
+.connect-section {
+  margin-top: 50px; /* Adds space from the top */
+  text-align: center;
+}
+
+.connect-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below h3 */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between icons */
+}
+
+.social-icon {
+  width: 35px;  /* Smaller size for icons */
+  height: 35px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.about-skills {
+  /* Other existing styles */
+  margin-bottom: 50px; /* Add this line to create space at the bottom */
+}

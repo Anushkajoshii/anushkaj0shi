@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+  padding: 0 10%;
+  font-family: 'karla', sans-serif;
+}
+
+/* Text Styling */
+.hero-text {
+  flex: 1;
+  font-size: 40px;
+  font-weight: bold;
+  color: #b10101;
+  text-align: left;
+  margin-right: 45%;
+  margin-top: 200px;
+  font-family: "Georgia", serif;
+  /* Add this to remove margin between h1 and h2 */
+  line-height: 1.1; /* Reduces spacing between lines */
+}
+
+/* Styling for the span */
+.hero-text h2 .space {
+  display: block; /* Makes "SPACE" appear on a new line */
+}
+
+/* Remove margin between h1 and h2 */
+.hero-text h1, .hero-text h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Image Container */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image vertically */
+}
+
+/* Image Styling */
+.hero-image img {
+  width: 120%; /* Increased size */
+  max-width: 600px; /* Increased max width */
+  height: auto;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-right: 600px;
+}

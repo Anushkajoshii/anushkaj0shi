@@ -1,0 +1,66 @@
+/* Navbar styling */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffbfb;
+    color: rgb(0, 0, 0);
+    padding: 32px 8px;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  .navbar-left, .navbar-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .navbar-left {
+    margin-left: 60px;
+  }
+  
+  .navbar-right {
+    margin-right: 110px;
+  }
+  
+  .navbar-left ul, .navbar-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar-left li, .navbar-right li {
+    margin-right: 25px;
+  }
+  
+  .navbar-left a, .navbar-right a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Centering the "Anushka Joshi" text */
+  .navbar-center {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 40px; 
+  }
+  
+  .navbar-center a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .navbar-center h2 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

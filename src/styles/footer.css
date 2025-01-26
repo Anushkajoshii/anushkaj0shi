@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffefe;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 4rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  footer p {
+    font-size: 18px;
+    margin: 0;
+  }
+  

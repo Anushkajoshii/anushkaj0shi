@@ -1,0 +1,141 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'karla', sans-serif;
+  background-color: #f4f4f4;
+  color: #040404;
+  font-size: 33px;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffefe;
+  color: rgb(0, 0, 0);
+  padding: 32px 8px;  /* Added padding for better spacing */
+  width: 100%;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  justify-content: flex-start;  /* Align items within each section */
+  align-items: center;
+}
+
+.navbar-left {
+  margin-left: 60px; /* Shift the left contents to the right */
+}
+
+.navbar-right {
+  margin-right: 60px; /* Shift the left contents to the right */
+}
+
+.navbar-left ul, .navbar-right ul {
+  list-style: none;
+  display: flex;
+  margin: 0;  /* Ensure no margin between list items */
+}
+
+.navbar-left li, .navbar-right li {
+  margin-right: 25px;  /* Space between links */
+}
+
+.navbar-left a, .navbar-right a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px; /* Adjust link font size */
+  font-weight: bold;
+}
+
+.navbar-center a {
+  color: rgb(0, 0, 0);  /* Set text color */
+  text-decoration: none;  /* Remove underline */
+  font-size: 40px; /* Adjust font size */
+  font-weight: bold;
+}
+
+/* Centering the "Anushka Joshi" text */
+.navbar-center {
+  text-align: center;
+  flex-grow: 1;  /* Center the content */
+  margin: 0 40px; /* Add some margin to space the left/right sections from the center */
+  text-decoration: none;
+}
+
+.navbar-center h2 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: 0 40px;  /* No margin around the name */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  .projects {
+    padding: 50px;
+    background: rgb(255, 250, 250);
+    text-align: center;
+  }
+  
+  .project-card {
+    background: #b67e7e;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 50px;
+    background: #fbf9f9;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Footer styling */
+  footer {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background: #fffefe;
+    color: rgb(0, 0, 0);
+    padding: 40px 0; /* Increased padding for a larger footer */
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 18px; /* Adjust the font size for the footer text */
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
