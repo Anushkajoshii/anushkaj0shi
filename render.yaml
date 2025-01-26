@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: anushkajoshii
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    branch: main
+    plan: free
+    timeout: 10m
+    autoDeploy: true
