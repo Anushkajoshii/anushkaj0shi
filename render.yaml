@@ -6,5 +6,5 @@ services:
     startCommand: "npm start"
     branch: main
     plan: free
-    timeout: 10m
+    # timeout: 10m
     autoDeploy: true
