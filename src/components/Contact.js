@@ -1,29 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  
+  const [loading, setLoading] = useState(false);  // State to track the loading status
+  const [status, setStatus] = useState("");  // State for status messages
+
+  // Handle form data changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);  // Start loading when the form is being submitted
+    setStatus("");  // Reset status message on new submission
+    
+    // Send email using EmailJS
+    emailjs
+      .sendForm("anushkaportfolio", "anushka_template", e.target, "Ypu8UgvDQkY7KgJ28")
+      .then(
+        (result) => {
+          console.log("Message sent successfully:", result.text);
+          setFormData({ name: "", email: "", message: "" });  // Reset form data
+          setLoading(false);  // Stop loading after successful submission
+          setStatus("Message sent successfully!");  // Set success message
+        },
+        (error) => {
+          console.error("Error sending message:", error.text);
+          setLoading(false);  // Stop loading after error
+          setStatus("Failed to send message. Please try again later.");  // Set error message
+        }
+      );
+  };
+
   return (
     <div className="contact-container">
-      <h2 className="contact-subtitle">get in touch</h2>
+      <h2 className="contact-subtitle">Get in touch</h2>
       
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label>Name</label>
-        <input type="text" name="name" />
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
         
         <label>Email*</label>
-        <input type="email" name="email" required />
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
         
         <label>Message</label>
-        <textarea name="message"></textarea>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
         
-        <button type="submit" className="send-button">Send</button>
+        <button type="submit" className="send-button" disabled={loading}>
+          {loading ? "Sending..." : "Send"}
+        </button>
       </form>
 
-      {/* <p className="contact-note">
-        This site is protected by reCAPTCHA and the Google{" "}
-        <a href="#">Privacy Policy</a> and{" "}
-        <a href="#">Terms of Service</a> apply.
-      </p> */}
+      {status && <p className="status-message">{status}</p>}
 
       <div className="contact-footer">
         <h3>Questions or Comments?</h3>
@@ -35,31 +92,24 @@ const Contact = () => {
       </div>
 
       <div className="connect-section">
-  <h3>Connect With Me</h3>
-  
-  <div className="social-icons">
-    <a href="https://www.linkedin.com/in/joshi-anushka/" target="_blank" rel="noopener noreferrer">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="social-icon" />
-    </a>
-
-    <a href="https://github.com/Anushkajoshii" target="_blank" rel="noopener noreferrer">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="social-icon" />
-    </a>
-
-    <a href="mailto:anushkajoshi020503@gmail.com">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" className="social-icon" />
-    </a>
-
-    <a href="https://leetcode.com/u/anushkajoshi_/" target="_blank" rel="noopener noreferrer">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" className="social-icon" />
-    </a>
-  </div>
-</div>
-
+        <h3>Connect With Me</h3>
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/joshi-anushka/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="social-icon" />
+          </a>
+          <a href="https://github.com/Anushkajoshii" target="_blank" rel="noopener noreferrer">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="social-icon" />
+          </a>
+          <a href="mailto:anushkajoshi020503@gmail.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" className="social-icon" />
+          </a>
+          <a href="https://leetcode.com/u/anushkajoshi_/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" className="social-icon" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Contact;
-
-
