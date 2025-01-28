@@ -2,7 +2,7 @@
   "name": "anushka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Anushkajoshii.github.io/anushkaj0shi",
+  "homepage": ".",
   "dependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "cra-template": "1.2.0",
