@@ -1,12 +1,10 @@
+/* Default styles for desktop and tablet */
 .contact-container {
-  max-width: 100%;
-  width: 100%;
+  max-width: 600px;
   margin: 50px auto;
   text-align: center;
   font-family: 'karla', sans-serif;
   color: #222;
-  padding: 0 15px; /* Ensures some padding on smaller screens */
-  box-sizing: border-box; /* Prevents padding from affecting overall width */
 }
 
 .contact-title {
@@ -26,7 +24,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensures form uses full available width */
 }
 
 .contact-form label {
@@ -43,7 +40,6 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
 }
 
 .contact-form textarea {
@@ -59,7 +55,7 @@
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.3s;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* Creates space below the button */
 }
 
 .send-button:hover {
@@ -74,66 +70,68 @@
 }
 
 .contact-footer {
-  margin-top: 70px;
+  margin-top: 70px; /* Added more space */
   font-size: 14px;
 }
 
 .contact-footer h3 {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Adds space below h3 */
 }
 
 .contact-footer p {
-  margin-top: 15px;
+  margin-top: 15px; /* Adds space above p */
   color: #444;
   line-height: 1.8;
 }
 
 .contact-footer p br {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Adds space below the <br> */
 }
 
 .connect-section {
-  margin-top: 50px;
+  margin-top: 50px; /* Adds space from the top */
   text-align: center;
 }
 
 .connect-section h3 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below h3 */
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; /* Adds spacing between icons */
 }
 
 .social-icon {
-  width: 35px;
+  width: 35px;  /* Smaller size for icons */
   height: 35px;
   transition: transform 0.2s ease-in-out;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .about-skills {
-  margin-bottom: 50px;
+  /* Other existing styles */
+  margin-bottom: 50px; /* Add this line to create space at the bottom */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .contact-container {
-    padding: 0 10px;
+    max-width: 100%; /* Full width for mobile */
+    padding: 0 15px; /* Padding on smaller screens */
   }
 
   .contact-title {
-    font-size: 24px;
+    font-size: 24px; /* Slightly smaller title on mobile */
   }
 
   .contact-subtitle {
@@ -158,12 +156,29 @@
   }
 
   .social-icons {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px; /* Reduced gap on smaller screens */
   }
 
   .social-icon {
-    width: 30px;
+    width: 30px; /* Smaller icon size */
     height: 30px;
+  }
+
+  /* Shorten the input and textarea height for mobile */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px; /* Reduce padding */
+    height: 40px; /* Shorter input field */
+  }
+
+  .contact-form textarea {
+    height: 80px; /* Shorter textarea height */
+  }
+
+  .send-button {
+    font-size: 16px;
+    padding: 8px 16px; /* Reduce button size */
   }
 }
 
@@ -195,7 +210,23 @@
   }
 
   .social-icon {
-    width: 28px;
+    width: 28px; /* Even smaller icon size */
     height: 28px;
+  }
+
+  /* Shorten the input and textarea height for mobile */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 6px; /* Further reduce padding */
+    height: 35px; /* Further shorten input field */
+  }
+
+  .contact-form textarea {
+    height: 70px; /* Further shorten textarea height */
+  }
+
+  .send-button {
+    font-size: 14px;
+    padding: 6px 12px; /* Further reduce button size */
   }
 }

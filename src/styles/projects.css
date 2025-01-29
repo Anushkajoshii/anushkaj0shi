@@ -48,7 +48,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 60px;
-  margin-top: 70px;
+  margin-top: 40px; /* Reduced margin-top to move text upwards */
 }
 
 .project {
@@ -59,6 +59,7 @@
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 25px;
+  margin-top: 10px; /* Reduced margin-top to bring the project title upwards */
 }
 
 .project p {
@@ -70,8 +71,9 @@
 
 .project-header {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  align-items: center; /* Align items in a row */
+  justify-content: flex-start; /* Ensure items are aligned to the left */
+  gap: 10px; /* Add some spacing between the logo and the project name */
 }
 
 .project-icons {
@@ -116,13 +118,14 @@
 
   .section-title {
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 30px; /* Reduced margin-top for tablet */
     margin-bottom: 40px;
   }
 
   .project h3 {
     font-size: 20px;
     margin-bottom: 20px;
+    margin-top: 5px; /* Reduced margin-top for tablet */
   }
 
   .project p {
@@ -130,8 +133,8 @@
   }
 
   .project-header {
-    flex-direction: column; /* Stack items on smaller screens */
-    align-items: flex-start;
+    flex-direction: row; /* Ensure the logo and project name are aligned in a row */
+    align-items: center;
   }
 }
 
@@ -155,13 +158,14 @@
 
   .section-title {
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 20px; /* Reduced margin-top for mobile */
     margin-bottom: 30px;
   }
 
   .project h3 {
     font-size: 18px;
     margin-bottom: 15px;
+    margin-top: 5px; /* Reduced margin-top for mobile */
   }
 
   .project p {
@@ -169,7 +173,8 @@
   }
 
   .project-header {
+    flex-direction: row; /* Ensure the logo and project name are aligned in a row */
     gap: 10px;
-    flex-direction: column; /* Stack items on mobile */
+    align-items: center;
   }
 }
