@@ -39,15 +39,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Center image on smaller screens, shifted left on large screens */
 }
 
 /* Image Styling */
 .hero-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px; /* Larger size for desktop */
   height: auto;
   border-radius: 10px;
-  margin-left: 0;
+  margin-right: 5%; /* Shift image to the left on desktop */
 }
 
 /* 🔹 Responsive Design for Tablets */
@@ -66,7 +67,8 @@
   }
 
   .hero-image img {
-    max-width: 350px;
+    max-width: 450px; /* Slightly smaller size for tablets */
+    margin-left: 0; /* No shift on tablets */
   }
 }
 
@@ -86,6 +88,7 @@
   }
 
   .hero-image img {
-    max-width: 300px;
+    max-width: 300px; /* Even smaller size for mobile */
+    margin-left: 0; /* No shift on mobile */
   }
 }
