@@ -4,8 +4,9 @@
   align-items: center;
   height: 100vh;
   background: #ffffff;
-  padding: 0 10%;
-  font-family: 'karla', sans-serif;
+  padding: 0 5%;
+  font-family: 'Karla', sans-serif;
+  flex-wrap: wrap;
 }
 
 /* Text Styling */
@@ -15,16 +16,15 @@
   font-weight: bold;
   color: #b10101;
   text-align: left;
-  margin-right: 45%;
-  margin-top: 200px;
+  margin-right: 10%;
+  margin-top: 100px;
   font-family: "Georgia", serif;
-  /* Add this to remove margin between h1 and h2 */
-  line-height: 1.1; /* Reduces spacing between lines */
+  line-height: 1.1;
 }
 
-/* Styling for the span */
+/* Make "SPACE" appear on a new line */
 .hero-text h2 .space {
-  display: block; /* Makes "SPACE" appear on a new line */
+  display: block;
 }
 
 /* Remove margin between h1 and h2 */
@@ -38,15 +38,54 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the image vertically */
+  align-items: center;
 }
 
 /* Image Styling */
 .hero-image img {
-  width: 120%; /* Increased size */
-  max-width: 600px; /* Increased max width */
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
-  margin-left: 0px;
-  margin-right: 600px;
+  margin-left: 0;
+}
+
+/* 🔹 Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+}
+
+/* 🔹 Responsive Design for Phones */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 3%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
 }

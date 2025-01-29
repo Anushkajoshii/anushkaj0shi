@@ -1,66 +1,114 @@
-/* Navbar styling */
-
+/* Navbar Base Styling */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fffbfb;
-    color: rgb(0, 0, 0);
-    padding: 32px 8px;
-    width: 100%;
-    font-family: 'Karla', sans-serif;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffbfb;
+  color: rgb(0, 0, 0);
+  padding: 20px 5%;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Desktop Navigation */
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left ul, .navbar-right ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-left li, .navbar-right li {
+  margin-right: 20px;
+}
+
+.navbar-left a, .navbar-right a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Center Branding */
+.navbar-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navbar-center a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #fffbfb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.mobile-menu.open {
+  display: block;
+  max-height: 300px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-menu li {
+  padding: 10px 0;
+}
+
+.mobile-menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;  /* Default property */
+  -webkit-user-select: none; /* Safari support */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .navbar-left, .navbar-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+      display: none; /* Hide desktop menu */
   }
-  
-  .navbar-left {
-    margin-left: 60px;
+
+  .menu-icon {
+      display: block;
   }
-  
-  .navbar-right {
-    margin-right: 110px;
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+      top: 60px;
   }
-  
-  .navbar-left ul, .navbar-right ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-  }
-  
-  .navbar-left li, .navbar-right li {
-    margin-right: 25px;
-  }
-  
-  .navbar-left a, .navbar-right a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  /* Centering the "Anushka Joshi" text */
-  .navbar-center {
-    text-align: center;
-    flex-grow: 1;
-    margin: 0 40px; 
-  }
-  
-  .navbar-center a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  
-  .navbar-center h2 {
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    margin: 0 40px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
+}

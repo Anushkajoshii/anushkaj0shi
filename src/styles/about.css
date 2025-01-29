@@ -1,21 +1,118 @@
+/* Ensure full-width layout and prevent horizontal scrolling */
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
+}
+
+/* Main container - Centered with spacing */
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 4rem 1rem;
-    font-family: "Georgia", serif;
-    color: #333;
-    line-height: 1.8;
-    text-align: left;
+  width: 90%; /* Adjusted for better centering */
+  max-width: 1200px; /* Limits width for better layout */
+  margin: 0 auto; /* Centers the entire section */
+  padding: 4rem 2rem; /* Adds spacing from edges */
+  font-family: "Georgia", serif;
+  color: #333;
+  line-height: 1.8;
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Title Styling */
+.about-container .about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  text-align: left; /* Keep title aligned to the left */
+}
+
+/* Section Styling */
+.about-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* Grid Layout for Sections */
+.education-list, .certification-list, .skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Box Styling */
+.education-item, .certification-item, .skill-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Keep text aligned to the left */
+  max-width: 100%;
+}
+
+/* Social Icons */
+.about-connect {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+/* Ensure images do not exceed container width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      width: 95%; /* Adjust width for smaller screens */
+      padding: 3rem 1rem;
   }
-  
+
   .about-container .about-title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: lowercase;
-    margin-bottom: 2rem;
+      font-size: 2.5rem;
   }
-  
-  .about-container .about-content p {
-    margin-bottom: 1.5rem;
+
+  .education-list, .certification-list, .skills-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
+}
+
+@media (max-width: 480px) {
+  .about-container {
+      width: 98%; /* Ensures no content touches edges */
+  }
+
+  .about-container .about-title {
+      font-size: 2rem;
+  }
+
+  .education-list, .certification-list, .skills-list {
+      grid-template-columns: 1fr;
+  }
+
+  .social-icons {
+      gap: 1rem;
+  }
+
+  .social-icon {
+      width: 35px;
+      height: 35px;
+  }
+}
