@@ -226,7 +226,46 @@
   }
 
   .send-button {
-    font-size: 14px;
-    padding: 6px 12px; /* Further reduce button size */
-  }
+  background: black;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+.send-button:hover {
+  background: white;
+  color: black;
+}
+
+/* .send-button:disabled {
+  background: gray;
+  cursor: not-allowed;
+} */
+.send-button {
+  background: black;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+.send-button:hover {
+  background: white;
+  color: black;
+}
+
+.send-button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
 }
