@@ -17,9 +17,9 @@ const Navbar = () => {
         <ul>
           <li><Link to="/about" onClick={() => setMenuOpen(false)}>about</Link></li>
           <li><Link to="/projects" onClick={() => setMenuOpen(false)}>projects</Link></li>
+          <li><Link to="/archive" onClick={() => setMenuOpen(false)}>archive</Link></li>
           <li><Link to="/blogs" onClick={() => setMenuOpen(false)}>blogs</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>contact</Link></li>
-          <li><Link to="/archive" onClick={() => setMenuOpen(false)}>archive</Link></li> {/* Added Archive */}
         </ul>
       </div>
 
