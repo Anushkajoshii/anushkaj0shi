@@ -81,7 +81,7 @@ const Archive = () => {
 
   return (
     <div className="archive-container">
-      <h1>activities that bring me to life</h1>
+      <h1>activities and things that bring me to life</h1>
       <div className="gallery">
         {media.map((src, index) => (
           <img key={index} src={src} alt={`Archive ${index + 1}`} onClick={() => openLightbox(index)} />
