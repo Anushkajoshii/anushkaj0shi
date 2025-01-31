@@ -24,7 +24,7 @@ const About = React.forwardRef((props, ref) => {
   <div className="education-item">
     <h3>10th Grade</h3>
     <p>● Completed my 10th grade in the Class of 2019 with an excellent academic record from Central India Academy, Dewas.</p>
-    <p>● Achieved an overall grade of 85.8%, demonstrating strong analytical and problem-solving skills.excelling in Mathematics and Science.</p>
+    <p>● Achieved an overall grade of 85.8%, demonstrating strong analytical and problem-solving skills.</p>
   </div>
   
   <div className="education-item">
