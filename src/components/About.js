@@ -18,21 +18,28 @@ const About = React.forwardRef((props, ref) => {
       </div>
 
       {/* Education Section */}
-      <div className="about-education">
-        <h2 className="section-title">Education</h2>
-        <div className="education-item">
-          <h3>10th Grade</h3>
-          <p>Completed my 10th grade with excellent marks from Central India Academy, Dewas.</p>
-        </div>
-        <div className="education-item">
-          <h3>12th Grade</h3>
-          <p>Completed my 12th grade with a focus on Science(PCM) from Shri Gurukul H.S School, Sonkatch.</p>
-        </div>
-        <div className="education-item">
-          <h3>B.Tech in Computer Science & Engineering</h3>
-          <p>Pursuing B.Tech from Vellore Institute of Technology, Bhopal with a specialization in AI and ML.</p>
-        </div>
-      </div>
+<div className="about-education">
+  <h2 className="section-title">Education</h2>
+  
+  <div className="education-item">
+    <h3>10th Grade</h3>
+    <p>● Completed my 10th grade in the Class of 2019 with an excellent academic record from Central India Academy, Dewas.</p>
+    <p>● Achieved an overall grade of 85.8%, demonstrating strong analytical and problem-solving skills.excelling in Mathematics and Science.</p>
+  </div>
+  
+  <div className="education-item">
+    <h3>12th Grade</h3>
+    <p>● Graduated in the Class of 2021 with a focus on Science (PCM) from Shri Gurukul H.S School, Sonkatch.</p>
+    <p>● Scored 87.4% overall, excelling in Mathematics and Science.</p>
+  </div>
+  
+  <div className="education-item">
+    <h3>B.Tech in Computer Science & Engineering</h3>
+    <p>● Currently pursuing B.Tech in CSE (AI & ML specialization) at Vellore Institute of Technology, Bhopal (Class of 2025).</p>
+    <p>● Gaining hands-on experience in Artificial Intelligence, Machine Learning, and Data Science applications.</p>
+  </div>
+</div>
+
 
       {/* Certifications Section */}
       <div className="about-certifications">
