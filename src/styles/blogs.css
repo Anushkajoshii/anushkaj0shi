@@ -1,11 +1,94 @@
-/* blogs.css */
-
 .blogs {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Blog Card Styling */
+.blog-card {
+  background: #e0b3b3;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px; /* Ensures the blog card doesn't grow too wide */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevents overflow */
+}
+
+/* Blog Card Title */
+.blog-card h3 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+/* Blog Card Paragraph */
+.blog-card p {
+  font-size: 16px;
+  color: rgb(50, 50, 50);
+  margin-bottom: 10px;
+}
+
+/* Read More Button Styling */
+.read-more {
+  text-decoration: none;
+  color: #ffffff;
+  background: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background: #555;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .blogs {
+    padding: 30px;
+  }
+  .blog-card {
+    width: 90%;
+    max-width: 500px; /* Limit width on tablet screens */
+  }
+  .blog-card h3 {
+    font-size: 22px;
+  }
+  .blog-card p {
+    font-size: 14px;
+  }
+  .read-more {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .blogs {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  .blog-card {
+    width: 100%;
+    max-width: 100%; /* Full width on smaller screens */
+  }
+  .blog-card h3 {
+    font-size: 20px;
+  }
+  .blog-card p {
+    font-size: 12px;
+  }
+  .read-more {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 .blogs h2 {
