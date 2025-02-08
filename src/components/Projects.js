@@ -175,33 +175,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Wine Quality Prediction MLflow */}
-        <div className="project">
-          <div className="project-header">
-            <div className="project-icons">
-              <a
-                href="https://github.com/Anushkajoshii/Wine-Quality-Prediction-MLflow"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                  alt="GitHub"
-                  className="project-icon"
-                />
-              </a>
-            </div>
-            <h3>Wine Quality Prediction MLflow</h3>
-          </div>
-          <p>
-            A machine learning model for predicting wine quality using MLflow
-            for experiment tracking and hyperparameter tuning.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Python, Scikit-Learn, MLflow
-          </p>
-        </div>
-
         {/* MathHelp with Gestures */}
         <div className="project">
           <div className="project-header">
@@ -225,9 +198,64 @@ const Projects = () => {
             basic math problems.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Python, OpenCV, TensorFlow
+            <strong>Tech Stack:</strong> Python, OpenCV, TensorFlow, Numpy
           </p>
         </div>
+
+        {/* Predict Employee Performance */}
+        <div className="project">
+          <div className="project-header">
+            <div className="project-icons">
+              <a
+                href="https://github.com/Anushkajoshii/Predict-Employee-Performance"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                  alt="GitHub"
+                  className="project-icon"
+                />
+              </a>
+            </div>
+            <h3>Predict Employee Performance</h3>
+          </div>
+          <p>
+            A machine learning model designed to predict employee performance based on various workplace metrics.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python, Scikit-Learn, Pandas, Matplotlib
+          </p>
+        </div>
+
+        {/* Wine Quality Prediction MLflow */}
+        <div className="project">
+          <div className="project-header">
+            <div className="project-icons">
+              <a
+                href="https://github.com/Anushkajoshii/Wine-Quality-Prediction-MLflow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                  alt="GitHub"
+                  className="project-icon"
+                />
+              </a>
+            </div>
+            <h3>Wine Quality Prediction MLflow</h3>
+          </div>
+          <p>
+            A machine learning model for predicting wine quality using MLflow
+            for experiment tracking and hyperparameter tuning.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python, Scikit-Learn, MLflow, Pandas, Matplotlib, Numpy
+          </p>
+        </div>
+
+        
       </div>
     </div>
   );

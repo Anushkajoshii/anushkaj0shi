@@ -48,7 +48,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 60px;
-  margin-top: 40px; /* Reduced margin-top to move text upwards */
+  margin-top: 100px; /* Reduced margin-top to move text upwards */
 }
 
 .project {
@@ -59,7 +59,7 @@
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 25px;
-  margin-top: 10px; /* Reduced margin-top to bring the project title upwards */
+  margin-top: 20px; /* Reduced margin-top to bring the project title upwards */
 }
 
 .project p {
@@ -74,11 +74,12 @@
   align-items: center; /* Align items in a row */
   justify-content: flex-start; /* Ensure items are aligned to the left */
   gap: 10px; /* Add some spacing between the logo and the project name */
+  flex-direction: row; /* Keep GitHub logo and project name in one line */
 }
 
 .project-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Ensure icons are aligned horizontally */
   gap: 10px;
 }
 
