@@ -227,7 +227,32 @@ const Projects = () => {
             <strong>Tech Stack:</strong> Python, Scikit-Learn, Pandas, Matplotlib
           </p>
         </div>
-
+        {/* Customer Churn Prediction */}
+        <div className="project">
+          <div className="project-header">
+            <div className="project-icons">
+              <a
+                href="https://github.com/Anushkajoshii/customer-churn-prediction/tree/main"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                  alt="GitHub"
+                  className="project-icon"
+                />
+              </a>
+            </div>
+            <h3>Customer Churn Prediction</h3>
+          </div>
+          <p>
+            A machine learning model designed to predict customer churn, utilizing various classification techniques to enhance accuracy.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, NumPy, Streamlit
+          </p>
+        </div>
+        
         {/* Wine Quality Prediction MLflow */}
         <div className="project">
           <div className="project-header">
