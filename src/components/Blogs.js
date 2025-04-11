@@ -1,30 +1,31 @@
 import React from "react";
 import "../styles/blogs.css";
+import blogImage from "../assets/aa.jpg"; // ✅ Import image
 
 const Blogs = () => {
   return (
     <section id="blogs" className="blogs">
       <h2>my blogs</h2>
       <div className="blog-card">
-        <h3>Blog 1</h3>
-        <p>Exploring the fundamentals of React.js and its ecosystem.</p>
-        <button className="read-more" onClick={() => alert("Blog coming soon!")}>
-          Read More
-        </button>
-      </div>
-      <div className="blog-card">
-        <h3>Blog 2</h3>
-        <p>Understanding Machine Learning models and their applications.</p>
-        <button className="read-more" onClick={() => alert("Blog coming soon!")}>
-          Read More
-        </button>
-      </div>
-      <div className="blog-card">
-        <h3>Blog 3</h3>
-        <p>Optimizing performance in web applications using best practices.</p>
-        <button className="read-more" onClick={() => alert("Blog coming soon!")}>
-          Read More
-        </button>
+        <img
+          src={blogImage} // ✅ Use imported image here
+          alt="Your First Brain Dump on Machine Learning"
+          className="blog-image"
+        />
+        <div className="blog-content">
+          <h3>🧠 Your First Brain Dump on Machine Learning</h3>
+          <p>
+            An introductory perspective on machine learning, breaking down concepts in a beginner-friendly way.
+          </p>
+          <a
+            href="https://medium.com/@anushkajoshi020503/your-first-brain-dump-on-machine-learning-f9fe6f271a05"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="read-more"
+          >
+            Read More
+          </a>
+        </div>
       </div>
     </section>
   );
