@@ -117,6 +117,24 @@ const About = React.forwardRef((props, ref) => {
           <a href="https://leetcode.com/u/anushkajoshi_/" target="_blank" rel="noopener noreferrer">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" className="social-icon" />
           </a>
+
+          <a href="https://medium.com/@anushkajoshi020503" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png"
+            alt="Medium"
+            className="social-icon"
+          />
+        </a>
+
+        <a href="https://www.kaggle.com/anushkajoshii" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+            alt="Kaggle"
+            className="social-icon"
+          />
+        </a>
+
+
         </div>
       </div>
 
