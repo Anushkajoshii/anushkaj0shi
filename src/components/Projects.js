@@ -235,7 +235,7 @@ const Projects = () => {
               <p>A RAG system with custom data and Hugging Face LLMs for semantic search.</p>
               <p><strong>Tech Stack:</strong> Python, Hugging Face Transformers, FAISS, Streamlit</p>
             </div>
-            
+
             {/* Wine Quality Prediction MLflow */}
             <div className="project">
               <div className="project-header">
@@ -264,7 +264,7 @@ const Projects = () => {
               <p>Explore my Kaggle notebooks for various data science projects and analysis.</p>
                 <ul>
                   <li>
-                    <a href="https://www.kaggle.com/code/anushkajoshii/apple-financials-2009-2024-eda" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.kaggle.com/code/anushkajoshii/apple-financials-2009-2024-eda">
                       Apple Financials 2009-2024 EDA
                     </a>
                   </li>
