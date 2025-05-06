@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
 /* Navbar Base Styling */
 nav {
   display: flex;
@@ -32,10 +35,11 @@ nav {
 .navbar-left a, .navbar-right a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
+/* Center Branding */
 /* Center Branding */
 .navbar-center {
   text-align: center;
@@ -43,10 +47,14 @@ nav {
 }
 
 .navbar-center a {
+  font-family: 'Bebas Neue ', sans-serif;
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 36px;
   font-weight: bold;
+}
+.navbar-center a:hover {
+  color: #b10101;
 }
 
 /* Mobile Menu (Hidden by Default) */

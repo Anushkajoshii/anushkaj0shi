@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-center">
-        <h2><Link to="/">anushka joshi</Link></h2>
+        <h2><Link to="/">ANUSHKA JOSHI</Link></h2>
       </div>
 
       <div className="navbar-right">
