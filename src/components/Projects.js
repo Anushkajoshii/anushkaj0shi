@@ -147,6 +147,21 @@ const Projects = () => {
         </h2>
         {showML && (
           <>
+            {/* Live Anomaly Detection */}
+            <div className="project">
+              <div className="project-header">
+                <div className="project-icons">
+                  <a href="https://github.com/Anushkajoshii/liveAnomly" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" className="project-icon" />
+                  </a>
+                </div>
+                <h3>Live Anomaly Detection</h3>
+              </div>
+              <p>A real-time anomaly detection system that flags irregularities in time series data using statistical and ML techniques.</p>
+              <p><strong>Tech Stack:</strong> Python, Scikit-Learn, Pandas, Matplotlib</p>
+            </div>
+
+
             {/* Harry Potter RAG Q&A */}
             <div className="project">
               <div className="project-header">
