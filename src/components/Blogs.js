@@ -1,7 +1,10 @@
+
+
 import React from "react";
 import "../styles/blogs.css";
-import blogImage from "../assets/aa.jpg"; // Existing blog image
-import newBlogImage from "../assets/mm.jpg"; // Import a second image for the new blog
+import blogImage from "../assets/b1.jpg"; // Existing blog image
+import newBlogImage from "../assets/b2.jpg"; // Second blog image
+import thirdBlogImage from "../assets/b3.png"; // Third blog image
 
 const Blogs = () => {
   return (
@@ -45,6 +48,29 @@ const Blogs = () => {
           </p>
           <a
             href="https://medium.com/@anushkajoshi020503/machine-learning-but-its-not-that-deep-yet-68e718bbec3a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="read-more"
+          >
+            Read More
+          </a>
+        </div>
+      </div>
+
+      {/* Blog 3 */}
+      <div className="blog-card">
+        <img
+          src={thirdBlogImage}
+          alt="The Ultimate Guide to Machine Learning Algorithms: From Theory to Implementation"
+          className="blog-image"
+        />
+        <div className="blog-content">
+          <h3>📚 The Ultimate Guide to Machine Learning Algorithms: From Theory to Implementation</h3>
+          <p>
+            A comprehensive walkthrough of the most popular machine learning algorithms with practical implementation tips.
+          </p>
+          <a
+            href="https://medium.com/@anushkajoshi020503/the-ultimate-guide-to-machine-learning-algorithms-from-theory-to-implementation-fe14e8a7c05d"
             target="_blank"
             rel="noopener noreferrer"
             className="read-more"
