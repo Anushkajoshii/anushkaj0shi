@@ -24,7 +24,7 @@ const Blogs = () => {
             An introductory perspective on machine learning, breaking down concepts in a beginner-friendly way.
           </p>
           <a
-            href="https://medium.com/@anushkajoshi020503/your-first-brain-dump-on-machine-learning-f9fe6f271a05"
+            href="https://medium.com/@anushkaj0shi/your-first-brain-dump-on-machine-learning-f9fe6f271a05"
             target="_blank"
             rel="noopener noreferrer"
             className="read-more"
@@ -47,7 +47,7 @@ const Blogs = () => {
             A complete guide to ML algorithms — from supervised, unsupervised, and reinforcement learning, explained clearly for all levels.
           </p>
           <a
-            href="https://medium.com/@anushkajoshi020503/machine-learning-but-its-not-that-deep-yet-68e718bbec3a"
+            href="https://medium.com/@anushkaj0shi/machine-learning-but-its-not-that-deep-yet-68e718bbec3a"
             target="_blank"
             rel="noopener noreferrer"
             className="read-more"
@@ -70,7 +70,7 @@ const Blogs = () => {
             A comprehensive walkthrough of the most popular machine learning algorithms with practical implementation tips.
           </p>
           <a
-            href="https://medium.com/@anushkajoshi020503/the-ultimate-guide-to-machine-learning-algorithms-from-theory-to-implementation-fe14e8a7c05d"
+            href="https://medium.com/@anushkaj0shi/the-ultimate-guide-to-machine-learning-algorithms-from-theory-to-implementation-fe14e8a7c05d"
             target="_blank"
             rel="noopener noreferrer"
             className="read-more"

@@ -186,7 +186,7 @@ const About = React.forwardRef((props, ref) => {
             />
           </a>
 
-          <a href="https://medium.com/@anushkajoshi020503" target="_blank" rel="noopener noreferrer">
+          <a href="https://medium.com/@anushkaj0shi" target="_blank" rel="noopener noreferrer">
             <img
               src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png"
               alt="Medium"
