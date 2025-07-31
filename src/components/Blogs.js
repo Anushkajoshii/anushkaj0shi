@@ -1,10 +1,9 @@
-
-
 import React from "react";
 import "../styles/blogs.css";
 import blogImage from "../assets/b1.jpg"; // Existing blog image
 import newBlogImage from "../assets/b2.jpg"; // Second blog image
 import thirdBlogImage from "../assets/b3.png"; // Third blog image
+import fourthBlogImage from "../assets/b4.jpg"; // Fourth blog image
 
 const Blogs = () => {
   return (
@@ -80,6 +79,28 @@ const Blogs = () => {
         </div>
       </div>
 
+      {/* Blog 4 */}
+      <div className="blog-card">
+        <img
+          src={fourthBlogImage}
+          alt="Business Automation Evolved: GenAI vs Agentic AI"
+          className="blog-image"
+        />
+        <div className="blog-content">
+          <h3>⚙️ Business Automation Evolved: GenAI vs Agentic AI</h3>
+          <p>
+            Exploring the real-world impact and differences between Generative AI and Agentic AI in the future of business automation.
+          </p>
+          <a
+            href="https://medium.com/@anushkaj0shi/business-automation-evolved-genai-vs-agentic-ai-def1b8a0e66a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="read-more"
+          >
+            Read More
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
