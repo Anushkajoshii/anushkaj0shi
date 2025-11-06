@@ -1,181 +1,199 @@
-/* projects.css */
-.projects-container {
-  display: flex;
-  min-height: 100vh;
-  padding: 40px;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  font-family: 'Karla', sans-serif;
-  box-sizing: border-box; /* Prevents content overflow */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@300;500;700&display=swap');
+
+:root{
+  --bg: #ffffff;
+  --surface: #fbfcff;
+  --muted: #6b7280;
+  --text: #0f1724;
+  --accent-1: #7c5cff; /* purple */
+  --accent-2: #00bfa6; /* mint */
+  --card-border: rgba(15,23,36,0.06);
+  --glass: rgba(15,23,36,0.02);
 }
 
-/* Sidebar Styling */
-.sidebar {
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
-  bottom: 20px;
+/* Base layout — light, airy */
+.projects-container{
+  min-height:100vh;
+  padding:44px 28px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Karla', 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  box-sizing:border-box;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
 }
 
-.sidebar-icon {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s ease-in-out;
-  margin-right: 50px;
+.projects-content{
+  width:100%;
+  max-width:1100px;
+  background: var(--surface);
+  border-radius:12px;
+  padding:28px 28px 48px;
+  box-shadow: 0 8px 28px rgba(15,23,36,0.06);
+  border:1px solid var(--card-border);
 }
 
-.sidebar-icon:hover {
-  transform: scale(1.1);
+/* Dropdown (section-title) — now looks like a boxed toggle */
+.section-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:0.2px;
+  margin:22px 0 12px;
+  padding:10px 14px;
+  border-radius:12px;
+  background: linear-gradient(180deg, rgba(124,92,255,0.06), rgba(0,191,166,0.02));
+  color:var(--text);
+  cursor:pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.18s ease;
+  border: 1px solid rgba(15,23,36,0.04);
 }
 
-/* Main Content */
-.projects-content {
-  margin-left: 100px; /* To avoid overlap with sidebar */
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  font-family: 'Karla', sans-serif;
-  box-sizing: border-box;
+.section-title .caret{
+  font-size:14px;
+  color:var(--muted);
+  margin-left:8px;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 60px;
-  margin-top: 100px; /* Reduced margin-top to move text upwards */
+.section-title:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15,23,36,0.04);
 }
 
-.project {
-  margin-bottom: 30px;
+/* Project box */
+.project{
+  display:block;
+  padding:16px;
+  margin:14px 0;
+  border-radius:12px;
+  background: linear-gradient(180deg, #ffffff, #fbfbff);
+  border:1px solid var(--card-border);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+  position:relative;
 }
 
-.project h3 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 25px;
-  margin-top: 20px; /* Reduced margin-top to bring the project title upwards */
+.project:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(15,23,36,0.06);
+  border-color: rgba(124,92,255,0.12);
 }
 
-.project p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-  margin-top: 10px;
+.project-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
 
-.project-header {
-  display: flex;
-  align-items: center; /* Align items in a row */
-  justify-content: flex-start; /* Ensure items are aligned to the left */
-  gap: 10px; /* Add some spacing between the logo and the project name */
-  flex-direction: row; /* Keep GitHub logo and project name in one line */
+.project-icons{
+  display:flex;
+  gap:10px;
+  align-items:center;
 }
 
-.project-icons {
-  display: flex;
-  flex-direction: row; /* Ensure icons are aligned horizontally */
-  gap: 10px;
+.project-icon{
+  width:42px;
+  height:42px;
+  border-radius:8px;
+  padding:6px;
+  background: var(--glass);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  border:1px solid rgba(15,23,36,0.03);
 }
 
-.project-icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+.project-icon img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
 }
 
-.project-icon:hover {
-  transform: scale(1.1);
+.project-icon:hover{
+  transform: translateY(-3px);
 }
 
-/* Mobile and Tablet Responsiveness */
-@media (max-width: 1024px) {
-  .projects-container {
-    padding: 20px;
-  }
-
-  .sidebar {
-    left: 10px;
-    bottom: 10px;
-    gap: 15px;
-  }
-
-  .sidebar-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .projects-content {
-    margin-left: 0; /* No left margin to avoid content overlap */
-    padding: 15px;
-    max-width: 100%;
-  }
-
-  .section-title {
-    font-size: 24px;
-    margin-top: 30px; /* Reduced margin-top for tablet */
-    margin-bottom: 40px;
-  }
-
-  .project h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 5px; /* Reduced margin-top for tablet */
-  }
-
-  .project p {
-    font-size: 14px;
-  }
-
-  .project-header {
-    flex-direction: row; /* Ensure the logo and project name are aligned in a row */
-    align-items: center;
-  }
+.project h3{
+  font-size:18px;
+  font-weight:700;
+  margin:0;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 480px) {
-  .sidebar {
-    left: 5px;
-    bottom: 5px;
-    gap: 10px;
-  }
+.project p{
+  font-size:14px;
+  color:var(--muted);
+  margin:10px 0 0;
+  line-height:1.5;
+}
 
-  .sidebar-icon {
-    width: 30px;
-    height: 30px;
-  }
+.tech-stack{
+  margin-top:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
 
-  .projects-content {
-    padding: 10px;
-    max-width: 100%;
-  }
+.tech-pill{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background: linear-gradient(90deg, rgba(124,92,255,0.06), rgba(0,191,166,0.03));
+  border:1px solid rgba(124,92,255,0.06);
+  color:var(--text);
+}
 
-  .section-title {
-    font-size: 20px;
-    margin-top: 20px; /* Reduced margin-top for mobile */
-    margin-bottom: 30px;
-  }
+/* Accent ribbon for important projects */
+.accent-ribbon{
+  position:absolute;
+  right:12px;
+  top:12px;
+  font-size:11px;
+  font-weight:700;
+  padding:6px 8px;
+  background: linear-gradient(90deg,var(--accent-1),var(--accent-2));
+  color:white;
+  border-radius:8px;
+  box-shadow: 0 8px 20px rgba(124,92,255,0.08);
+}
 
-  .project h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: 5px; /* Reduced margin-top for mobile */
-  }
+/* Make the list of links look contained */
+.project ul{
+  margin:8px 0 0;
+  padding-left:18px;
+  color:var(--muted);
+}
 
-  .project p {
-    font-size: 12px;
-  }
+.project a{
+  color:var(--accent-1);
+  text-decoration:none;
+  font-weight:600;
+}
 
-  .project-header {
-    flex-direction: row; /* Ensure the logo and project name are aligned in a row */
-    gap: 10px;
-    align-items: center;
-  }
+.project a:hover{
+  text-decoration:underline;
+}
+
+/* Responsive tweaks */
+@media (max-width:1024px){
+  .projects-container{padding:22px}
+  .projects-content{padding:18px}
+  .project{padding:14px}
+  .project-icon{width:36px;height:36px}
+}
+
+@media (max-width:600px){
+  .projects-container{padding:16px}
+  .section-title{font-size:16px;padding:8px 12px}
+  .project h3{font-size:16px}
+  .project p{font-size:13px}
+}
+
+/* Accessibility focus */
+.project:focus-within{
+  outline:3px solid rgba(124,92,255,0.06);
+  outline-offset:3px;
 }
